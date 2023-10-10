@@ -1,18 +1,15 @@
-import React, { useState } from "react";
 const option1 = "Billed Monthly";
 const option2 = "Billed Yearly(save 15%)";
 
-export const Tongle = () => {
-  const [isChecked, setIsChecked] = useState(true);
-
+export const Tongle = ({ isChecked, setIsChecked }) => {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
 
   return (
-    <div class="flex items-end justify-center">
+    <div class="flex h-8 justify-center">
       <div
-        class="w-100 flex gap-4"
+        class="w-100 flex items-center gap-4"
         style={isChecked ? { marginLeft: "40px" } : {}}
       >
         <div
@@ -24,7 +21,7 @@ export const Tongle = () => {
         >
           {option1}
         </div>
-        <div class="py-1">
+        <div class="mt-2">
           <label class="relative inline-flex cursor-pointer items-center">
             <input
               type="checkbox"

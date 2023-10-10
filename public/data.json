@@ -1,0 +1,68 @@
+{
+  "LIST_MONTHLY": [
+    {
+      "money": "$0"
+    },
+    {
+      "money": "$12",
+      "duration": "month"
+    },
+    {
+      "money": "Custom",
+      "duration": "yearOnly"
+    }
+  ],
+  "LIST_YEARLY": [
+    {
+      "money": "",
+      "duration": "monthOnly"
+    },
+    {
+      "money": "$100",
+      "duration": "year"
+    },
+    {
+      "money": "Custom"
+    }
+  ],
+  "DESCRIPTION_LIST": [
+    {
+      "name": "Free",
+      "description": "Description of the tier list will go here. copy should be concise and impactful.",
+      "listOfBenefits": [
+        "Amazing feature one",
+        "Wonderful feature two",
+        "Priceless feature three",
+        "Splended feature four"
+      ],
+      "buttonText": "Try for Free"
+    },
+    {
+      "name": "Pro",
+      "description": "Description of the tier list will go here. copy should be concise and impactful.",
+      "upperBenefit": "Everything in the Free plan, plus",
+      "listOfBenefits": [
+        "Amazing feature one",
+        "Wonderful feature two",
+        "Priceless feature three",
+        "Splended feature four",
+        "Delightful feature five"
+      ],
+      "buttonText": "Subscribe Now",
+      "filledButton": true
+    },
+    {
+      "name": "Enterprise",
+      "description": "Description of the tier list will go here. copy should be concise and impactful.",
+      "upperBenefit": "Everything in the Pro plan, plus",
+      "listOfBenefits": [
+        "Amazing feature one",
+        "Wonderful feature two",
+        "Priceless feature three",
+        "Splended feature four",
+        "Delightful feature five"
+      ],
+      "buttonText": "Contact Sales"
+    }
+  ]
+}
