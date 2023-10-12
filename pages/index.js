@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Tongle } from "../components/Tongle";
 import { useState, useEffect } from "react";
 import PricingTable from "./PricingTable";
+import dataOfTable from "../public/data.json";
 
 export default function Home() {
   const [isChecked, setIsChecked] = useState(true);
@@ -19,6 +20,7 @@ export default function Home() {
         setData(responseData.data);
       })
       .catch((error) => {
+        setData(dataOfTable);
         console.error("get data error:", error);
       });
   }, []);
