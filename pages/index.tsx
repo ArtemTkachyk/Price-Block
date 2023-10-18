@@ -1,12 +1,13 @@
 import Head from "next/head";
+import React from "react";
 import { Tongle } from "../components/Tongle";
 import { useState, useEffect } from "react";
 import PricingTable from "./PricingTable";
 import dataOfTable from "../public/data.json";
 
-export default function Home() {
-  const [isChecked, setIsChecked] = useState(true);
-  const [data, setData] = useState(null);
+const Home: React.FC = () => {
+  const [isChecked, setIsChecked] = useState<boolean>(true);
+  const [data, setData] = useState<any>(null);
 
   useEffect(() => {
     fetch("/api/getData")
@@ -27,9 +28,7 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>Pricing Table</title>
-      </Head>
+      <Head children={<title>Pricing Table</title>} />
       <main>
         <h1 className="my-6 text-center text-3xl font-bold tracking-tight sm:text-4xl">
           Our Pricing
@@ -44,4 +43,6 @@ export default function Home() {
       </main>
     </div>
   );
-}
+};
+
+export default Home;
